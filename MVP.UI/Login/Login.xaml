@@ -1,0 +1,34 @@
+﻿<Window x:Class="MVP.UI.Login.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Iniciar sesión"
+        Height="220" Width="380"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="8"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="16"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Bienvenido" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical">
+            <TextBlock Text="Usuario" Margin="0,4,0,2"/>
+            <TextBox Name="txtUsername" Height="28"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Vertical">
+            <TextBlock Text="Contraseña" Margin="0,4,0,2"/>
+            <PasswordBox Name="pwdPassword" Height="28"/>
+        </StackPanel>
+
+        <Button Grid.Row="6" Name="btnLogin" Content="Iniciar sesión" Width="140" Height="32"
+                HorizontalAlignment="Center" IsDefault="True" Click="BtnLogin_Click"/>
+    </Grid>
+</Window>

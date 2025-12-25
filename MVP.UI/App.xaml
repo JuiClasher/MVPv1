@@ -1,9 +1,7 @@
 ﻿<Application x:Class="MVP.UI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MVP.UI"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Login/Login.xaml">
     <Application.Resources>
-         
     </Application.Resources>
 </Application>
